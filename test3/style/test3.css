@@ -1,89 +1,90 @@
 body{
-    margin: 0 auto;
-    width: 80%;
+    margin: 0;
+    padding: 0;
 }
-p{
-    margin: 60px 60px;
+h4{
+    text-align: center;
 }
 a{
     text-decoration: none;
 }
-#header a{
-    color: white;
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-.aa:hover{
-    background-color: rgba(10, 241, 114, 0.89);
+header{
+    background-color: rgb(156, 80, 82);
 }
-#content hr{
-    text-align:center ;
-    border: solid #381f08;
-    width: 24%;
-}
-table{
-    border:0;
-    background-color: rgb(233, 222, 226);
-    border-spacing: 10px;
-    margin: auto;
-    padding: 10px;
-}
-tr td{
-    font-size: 20px;
-    font-weight: bold;
-}
-table img{
-    width: 250px;
-    height: 350px;
-}
-#header{
-    color: white;
-    background-color: #d18411ef;
-    height: 50px;
-    padding: 10px;
-}
-#bottom{
-    color: white;
-    background-color: #d18411ef;
-    height: 200px;
-    padding: 5px;
-}
-.bottom_left{
-    width: 60%;
-    float: left;
-}
-.bottom_right{
-    width: 40%;
-    height: 30%;
-    float: right;
-}
-#content h2{
-    text-align: center;
-}
-#footer{
-    text-align: center;
-    padding: 5px;
-    background-color:#d18411ef;
-    color: white;
-}
-.header_left{
-    float: left;
-    padding: 5px;
-    vertical-align: middle;
-}
-.header_right{
-    float: right;
-    padding: 10px;
-    vertical-align: middle;
+.container{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 0 16px;
 }
 .icon{
-    width: 40px;
-    height: 40px;
-    vertical-align: middle;
+    width: 32px;
+    height: 32px;
 }
-.center{
+.header-title{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    height: 64px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 1;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav ul>li {
+    display: flex;
+    flex-direction: row;
+}
+.nav ul>li a{
+    display: inline-block;
+    padding: 8px;
+    color: white;
+}
+.cleafix{
+    clear: both;
+}
+.section-title{
     text-align: center;
 }
-.img1{
-    width: 150px;
-    height: 150px;
-    margin: 30px 150px;
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container.column{
+    flex-direction: column;
+    padding: 0;
+}
+footer{
+    background-color: rgb(167, 28, 49);
+    min-height: 200px;
+}
+footer .left{
+    color: white;
+    padding: 0;
+}
+img{
+    width: 250px;
+    height: 400px;
+}
+.qrcode{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    padding: 60px;
 }

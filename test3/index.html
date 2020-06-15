@@ -3,87 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NBA列表</title>
-    <link rel="stylesheet" href="./style/test3.css">
+    <title>NBA</title>
+    <link rel="stylesheet" type="text/css" href="style/test3.css">
 </head>
 <body>
-    <div id="container">
-        <div id="header">
-            <div class="header_left">
-                <span><img src="./images/nba.png" alt="fish" class="icon">&nbsp;NBA</span>
+    <header>
+        <div class="container">
+            <div class="header-title">
+                <img src="./images/nba.png" alt="nba" class="icon">
+                <span>NBA列表</span>
             </div>
-            <div class="header_right">
-                <span><a href="#a1" class="aa">球星列表 |</a></span>
-                <span><a href="#a2" class="aa">球队列表 |</a></span>
-                <span><a href="#a3" class="aa">聊一聊</a></span>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#c1">球星列表</a></li>
+                    <li><a href="#c2">球队列表</a></li>
+                    <li><a href="#c3">聊一聊</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container column">
+            <h2 class="section-title" id="c1">球星列表</h2>
+            <ul class="gallery">
+                <li>
+                    <img src="./images/LBJ.jpg" alt="james"">
+                    <h4>詹姆斯</h4>
+                </li>
+                <li>
+                    <img src="./images/wade.jpg" alt="wade">
+                    <h4>韦德</h4>
+                </li>
+                <li>
+                    <img src="./images/cp3.jpg" alt="cp3">
+                    <h4>保罗</h4>
+                </li>
+                <li>
+                    <img src="./images/melo.jpg" alt="melo">
+                    <h4>安东尼</h4>
+                </li>
+            </ul>
+        </div>
+        <div class="container column">
+            <h2 class="section-title" id="c2">球队列表</h2>
+            <ul class="gallery">
+                <li>
+                    <img src="./images/laker.jpg" alt="lakers">
+                    <h4>湖人</h4>
+                </li>
+                <li>
+                    <img src="./images/heat.jpg" alt="heat">
+                    <h4>热火</h4>
+                </li>
+                <li>
+                    <img src="./images/clippers.jpg" alt="clippers">
+                    <h4>快船</h4>
+                </li>
+                <li>
+                    <img src="./images/knicks.jpg" alt="knicks">
+                    <h4>尼克斯</h4>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="left">
+                <h3 style="vertical-align: middle;" id="c3">永远不要低估一颗冠军的心！！nba球星集合，湖人总冠军，詹姆斯fmvp，湖人总冠军，詹姆斯fmvp</h3>
+            </div>
+            <div class="right">
+                <img src="./images/vx.png" alt="二维码" class="qrcode">
             </div>
         </div>
-        <div id="content">
-            <h2><a name="a1">球星列表</a></h2>
-            <hr>
-            <div class="center">
-                <table>
-                    <tr>
-                        <td>
-                            <img src="./images/LBJ.jpg" alt="詹姆斯">
-                        </td>
-                        <td>
-                            <img src="./images/wade.jpg" alt="韦德">
-                        </td>
-                        <td>
-                            <img src="./images/cp3.jpg" alt="保罗">
-                        </td>
-                        <td>
-                            <img src="./images/melo.jpg" alt="安东尼">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>詹姆斯</td>
-                        <td>韦德</td>
-                        <td>保罗</td>
-                        <td>安东尼</td>
-                    </tr>
-                </table>
-            </div>
-            <h2><a name="a2">球队列表</a></h2>
-            <hr>
-            <div class="center">
-                <table>
-                    <tr>
-                        <td>
-                            <img src="./images/laker.jpg" alt="湖人">
-                        </td>
-                        <td>
-                            <img src="./images/heat.jpg" alt="热火">
-                        </td>
-                        <td>
-                            <img src="./images/clippers.jpg" alt="快船">
-                        </td>
-                        <td>
-                            <img src="./images/knicks.jpg" alt="尼克斯">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>湖人</td>
-                        <td>热火</td>
-                        <td>快船</td>
-                        <td>尼克斯</td>
-                    </tr>
-                </table>
-            </div>
+        <div id="bottom" style="text-align: center;">
+            <h3>版权所有&copy;蔡国城</h3>
         </div>
-        <div id="bottom">
-            <div class="bottom_left">
-                <p>永远不要低估一颗冠军的心！！</p>
-            </div>
-            <div class="bottom_right">
-                <a name="a3"><img src="./images/vx.png" alt="二维码" class="img1"></a>
-            </div>
-        </div>
-        <hr style="margin: auto;">
-        <div id="footer">
-            <h5 style="text-align: center;">版权所有&copy;蔡国城</h5>
-        </div>
-    </div>
+    </footer>
 </body>
 </html>
