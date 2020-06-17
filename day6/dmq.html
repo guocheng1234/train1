@@ -4,49 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>弹幕墙</title>
-    <style>
-        * {margin: 0; padding: 0;}
-        .frame {
-            background-color: white;
-            margin-top: 10px;
-            margin-left: 60px;
-            overflow: hidden;
-            position: relative;
-        }
-        .sender {
-            height: 50px;
-            margin-left: 60px;
-            margin-top: 10px;
-        }
-        input{
-            outline-style: none ;
-            border: 1px solid #ccc; 
-            border-radius: 3px;
-            padding: 13px 14px;
-            font-size: 14px;
-            font-weight: 700;
-            
-            width: 70%;
-        }
-        input:focus{
-            border-color: #66afe9;
-            outline: 0;
-            -webkit-box-shadow: inset 0 1px 1px rgba(226, 25, 25, 0.842),0 0 8px rgba(64, 238, 41, 0.877);
-            box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
-        }
-        .senderBtn {
-            margin-left: 10px;
-            line-height: 48px;
-            border-radius: 3px;
-            display: inline-block;
-            color: white;
-            height: 48px;
-            width: 12%;
-            text-align: center;
-            font-size: larger;
-            background-color: #8bbb93;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style/dmq.css">
 </head>
 <body style="background-color: rgba(243, 137, 178, 0.925);">
     <div id="main" class="frame"></div>
@@ -60,7 +18,6 @@
         var WIN_HEIGHT = 0;
         var DANMU_LIST = [];
         var SEQ = 1;
-
         /**
          * 弹幕对象
          */
@@ -75,12 +32,7 @@
             let differ = end - start;
             let random = Math.random();
             return (start + differ * random).toFixed(fixed);
-        }
-
-
-        /**
-         * 创建、删除一个DIV
-         */
+         }
          function addDanmu(text) {
             // 随机生成颜色、速度（2~7）、大小（6~36px）、位置（20~MAX高度-80）
             let r = getRandom(0, 255);
@@ -116,10 +68,6 @@
                 danmu.parentNode.removeChild(danmu);
             }
         }
-
-        /**
-         * 发送弹幕
-         */
         function sendDanmu() {
             // 获取内容
             var text = document.getElementById("inputText").value;
@@ -152,10 +100,6 @@
             }
             
         }
-
-        /**
-         * 清屏
-         */
         function clearDanmu() {
             DANMU_LIST = [];
             document.getElementById("main").innerHTML = '';
@@ -175,18 +119,6 @@
             initWindows();
             document.getElementById("Btn1").addEventListener("click", sendDanmu);
             document.getElementById("Btn2").addEventListener("click", clearDanmu);
-           /* for (var i = 0; i < 250; i++) {
-                addDanmu("湖人总冠军");
-            }
-            for (var i = 0; i < 150; i++) {
-                addDanmu("詹姆斯FMVP");
-            }
-            for (var i = 0; i < 50; i++) {
-                addDanmu("詹姆斯牛逼");
-            }
-            for (var i = 0; i < 50; i++) {
-                addDanmu("骑士牛逼");
-            }*/
         }
         window.onresize = function() {
             initWindows();

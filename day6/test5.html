@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>弹幕</title>
+    <style>
+    body{
+   background-color:rgb(199, 233, 201);
+ 
+    }
+    .box1{
+           width:100%;
+           height:100%;
+           position: absolute;
+           bottom:-50px;
+        }
+   .box2{
+        width:800px;
+        position: absolute;
+        text-align: center;
+        height:100px;
+        border:1px solid #ccc;
+        background-color:rgb(164,204,178);
+        bottom:50px;
+        left:30%;
+    }
+    p{
+        width:100px;
+        height:50px;
+        position: absolute;
+        left:200px;
+        top:1px;
+        font-size:30px;
+        color:pink;
+    }
+    .input{
+        width:200px;
+        height:30px;
+        border:1px solid rgb(71, 224, 217);
+        position: absolute;
+        left:300px;
+        top:34px;
+    }
+    .btn{
+        width:60px;
+        height:30px;
+        position: absolute;
+        left:520px;
+        top:35px;
+        background-color:rgb(17,150,225);
+        color:#fff;
+    }
+    .clear{
+        width:60px;
+        height:30px;
+        position: absolute;
+        left:600px;
+        top:35px;
+        background-color:rgb(17,150,225);
+        color:#fff;
+    }
+    span{
+      width: 300px;
+      height: 140px;
+      position: absolute;
+      overflow: hidden;
+      color: #000;
+      font-size: 4em;
+      line-height: 1.5em;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    </style>
+     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(function(){
+        var colors=["black","pink","hotpink","blue","yellow"];//颜色数组，随机色从中产生
+        $(".btn").click(function(){
+            var radomColors=parseInt(Math.random() * colors.length);//随机颜色
+            var radomsize=parseInt(Math.random() * 64)
+            var radomY=parseInt(Math.random()*200);//弹幕出现的随机高度
+            $("<span></span>").text($(".input").val())//创建一个span并且给他input值
+           .css("color",colors[radomColors]) //给样式增加随机生成的颜色
+            .css("left",1200)//设置left值,弹幕从哪儿开始
+            .css("top",radomY)//设置top
+            .css("font-size",radomsize)
+            .animate({left:-500},5000,function(){
+                $(this).remove();}//让字体按5000毫秒的速度向左移动移动
+            ).appendTo(".box1");
+            $(".input").val("");
+        });
+        $('.clear').click(function() {
+          $('.box1').empty();
+        });
+    });</script>
+</head>
+<body>
+    <div>
+    <div class="box1"></div>
+    <div class="box2">
+        <input type="text" class="input">
+        <button value="发射" class="btn">发射</button> 
+        <button value="清屏" class="clear">清屏</button>  
+    </div>
+</div> 
+</body>
+</html>

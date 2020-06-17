@@ -93,6 +93,16 @@
       $(function() {
         //设置“发送”按钮点击事件，将弹幕体显示在弹幕墙上
         $('.send').click(function() {
+          var radomColors=parseInt(Math.random() * colors.length);//随机颜色
+            var radomsize=parseInt(Math.random() * 64)
+            var radomY=parseInt(Math.random()*500);//弹幕出现的随机高度
+            $("<span></span>").text($(".content").val())//创建一个span并且给他input值
+           .css("color",colors[radomColors]) //给样式增加随机生成的颜色
+            .css("font-size",radomsize)
+            /*.animate({left:-500},5000,function(){
+                $(this).remove();}//让字体按5000毫秒的速度向左移动移动
+            ).appendTo(".dm_show");
+            $(".content").val("");*/
           //获取文本输入框的内容
           var val = $('.content').val();
           //将文本框的内容赋值给val后，将文本框的内容清除，以便用户下一次输入
@@ -103,16 +113,17 @@
           $screen = $(document.getElementById("screen"));
           //设置弹幕体出现时的上边距，为任意值
           var top = Math.random() * $screen.height()+40;
+          var radomColors=parseInt(Math.random() * colors.length);//随机颜色
           //设置弹幕体的上边距和左边距
           $content.css({
             top: top + "px",
-            left: 80
+            right: 80
           });
           //将弹幕体添加到弹幕墙中
           $('.dm_show').append($content);
           //弹幕体从左端移动到最右侧，时间为8秒，然后直接删除该元素
           $content.animate({
-            left: $screen.width()+80-$content.width()
+            right: $screen.width()+80-$content.width()
           }, 8000, function() {
             $(this).remove();
           });
