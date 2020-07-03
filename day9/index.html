@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <script src="./libs/show/show.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>豹发力体育</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="logo">豹发力体育</div>
+        <nav>
+          <a href="./index.html">首页</a>
+          <a href="./about.html">关于我们</a>
+          <a href="#showcases">超级巨星</a>
+          <a href="#service">服务流程</a>
+          <a href="#team-intro">团队介绍</a>
+          <a href="./news.html">公司动态</a>
+          <i class="fas fa-search"></i>
+        </nav>
+        <div class="burger">
+          <div class="burger-line1"></div>
+          <div class="burger-line2"></div>
+          <div class="burger-line3"></div>
+        </div>
+      </header>
+      <div id="home" class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <div class="glide__slides">
+            <div class="glide__slide">
+              <div class="slide-caption">
+                <h1>勒布朗詹姆斯</h1>
+                <h3>
+                  四次MVP，三次总冠军，三次FMVP，一次得分王
+                </h3>
+                <button class="explore-btn">探索更多</button>
+              </div>
+              <div class="backdrop"></div>
+              <img src="./images/lbj1.jpg" alt="lbj" />
+            </div>
+            <div class="glide__slide">
+              <div class="slide-caption left">
+                <h1>德怀恩韦德</h1>
+                <h3>
+                  三次总冠军，一次FMVP，一次AMVP
+                </h3>
+                <button class="explore-btn">探索更多</button>
+              </div>
+              <div class="backdrop"></div>
+              <img src="./images/wade.jpg" alt="wade"></img>
+            </div>
+            <div class="glide__slide">
+              <div class="slide-caption left">
+                <h1>科比布莱恩特</h1>
+                <h3>
+                  一次MVP，五次总冠军，两次FMVP，两次得分王
+                </h3>
+                <button class="explore-btn">探索更多</button>
+              </div>
+              <div class="backdrop"></div>
+              <img src="./images/kobe.jpg" alt="kobe"></img>
+            </div>
+          </div>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            >
+          </button>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <section id="service" class="service">
+          <h2 class="title1">服务流程</h2>
+          <p class="intro">
+            可在网站上浏览相关信息，可通过客服解决问题
+          </p>
+          <div class="services">
+            <div class="service-item">
+              <i class="fas fa-share"></i>
+              <h2 class="service-title">进入网站</h2>
+              <p class="service-content">
+                这是最初始的步骤
+              </p>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-comments"></i>
+              <h2 class="service-title">浏览信息</h2>
+              <p class="service-content">
+                通过鼠标滑动浏览大概情况
+              </p>
+            </div>
+            <div class="service-item">
+              <i class="fas  fa-mouse-pointer"></i>
+              <h2 class="service-title">点击图片</h2>
+              <p class="service-content">
+                找到想要的图片点击进行浏览
+              </p>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-play"></i>
+              <h2 class="service-title">观看视频</h2>
+              <p class="service-content">
+                NBA各种集锦随意观看
+              </p>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-arrow-down"></i>
+              <h2 class="service-title">媒体下载</h2>
+              <p class="service-content">
+                如果喜欢图片或视频，可以下载它
+              </p>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-space-shuttle"></i>
+              <h2 class="service-title">安全退出</h2>
+              <p class="service-content">
+                您可以安全的退出此网站
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="showcases" class="showcases section-bg">
+          <h2 class="title1">超级巨星</h2>
+          <div class="filter-btns">
+            <button class="filter-btn active" data-filter="*">全部</button>
+            <button class="filter-btn" data-filter=".lbj">詹姆斯</button>
+            <button class="filter-btn" data-filter=".kobe">科比</button>
+            <button class="filter-btn" data-filter=".wade">韦德</button>
+          </div>
+          <div class="cases">
+            <div class="case-item lbj">
+              <img
+                src="./images/lbj2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="case-item kobe">
+              <img
+                src="./images/kobe.jpg"
+                alt=""
+              />
+            </div>
+            <div class="case-item wade">
+              <img
+                src="./images/wade.jpg"
+                alt=""
+              />
+            </div>
+            <div class="case-item lbj">
+              <img
+                src="./images/lbj3.png"
+                alt=""
+              />
+            </div>
+            <div class="case-item kobe">
+              <img
+                src="./images/kobe1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="case-item wade">
+              <img
+                src="./images/wade1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="case-item lbj">
+              <img
+                src="./images/lbj4.jpg"
+                alt=""
+              />
+            </div>
+            <div class="case-item kobe">
+              <img
+                src="./images/kobe2.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+        
+        <section class="data-section">
+          <div class="data-piece">
+            <i class="fas fa-user"></i>
+            <div class="num">96</div>
+            <div class="data-desc">名客服</div>
+          </div>
+          <div class="data-piece">
+            <i class="fas fa-award"></i>
+            <div class="num">512</div>
+            <div class="data-desc">张图片</div>
+          </div>
+          <div class="data-piece">
+            <i class="fas fa-laugh-wink"></i>
+            <div class="num">2560</div>
+            <div class="data-desc">条信息</div>
+          </div>
+          <div class="data-piece">
+            <i class="fas fa-cat"></i>
+            <div class="num">128</div>
+            <div class="data-desc">个视频</div>
+          </div>
+        </section>
+        <section id="team-intro" class="team-intro section-bg">
+          <h2 class="title1">团队介绍</h2>
+          <div class="team-members">
+            <div class="team-member">
+              <div class="profile-image">
+                <img src="./images/zbh.jpg" alt="" />
+              </div>
+              <h4 class="name">蔡国城</h4>
+              <p class="position">创始人</p>
+              <ul class="social-links">
+                <li>
+                  <a href=""><i class="fab fa-weixin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-weibo"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team-member">
+              <div class="profile-image">
+                <img
+                  src="./images/lye.jpg"
+                  alt=""
+                />
+              </div>
+              <h4 class="name">林允儿</h4>
+              <p class="position">美女客服</p>
+              <ul class="social-links">
+                <li>
+                  <a href=""><i class="fab fa-weixin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-weibo"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="team-member">
+              <div class="profile-image">
+                <img
+                  src="./images/cx.jpg"
+                  alt=""
+                />
+              </div>
+              <h4 class="name">程潇</h4>
+              <p class="position">美女客服</p>
+              <ul class="social-links">
+                <li>
+                  <a href=""><i class="fab fa-weixin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-weibo"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="team-member">
+              <div class="profile-image">
+                <img src="./images/lbj1.jpg" alt="" />
+              </div>
+              <h4 class="name">詹姆斯</h4>
+              <p class="position">超巨代言</p>
+              <ul class="social-links">
+                <li>
+                  <a href=""><i class="fab fa-weixin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-weibo"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+      </div>
+      <footer>
+        <div class="footer-menus">
+          <div class="contact-us">
+            <p class="menu-title">联系我们</p>
+            <p>地址：中国福建省福州市闽侯县闽江学院</p>
+            <p>电话：15880729336</p>
+            <p>传真：15880729336</p>
+            <p>电子邮箱：244122535@qq.com</p>
+          </div>
+          <div class="service-menu footer-menu">
+            <p class="menu-title">服务概览</p>
+            <ul class="menu-items">
+              <li><a href="#">图片浏览</a></li>
+              <li><a href="#">信息浏览</a></li>
+              <li><a href="#">视频浏览</a></li>
+              <li><a href="#">咨询客服</a></li>
+            </ul>
+          </div>
+          <div class="service-menu footer-menu">
+            <p class="menu-title">超级明星</p>
+            <ul class="menu-items">
+              <li><a href="#">詹姆斯</a></li>
+              <li><a href="#">科比</a></li>
+              <li><a href="#">韦德</a></li>
+              <li><a href="#">保罗</a></li>
+            </ul>
+          </div>
+          <div class="service-menu footer-menu">
+            <p class="menu-title">公司动态</p>
+            <ul class="menu-items">
+              <li><a href="#">信息公开</a></li>
+              <li><a href="#">最近新闻</a></li>
+              <li><a href="#">最新博客</a></li>
+            </ul>
+          </div>
+          <div class="service-menu footer-menu">
+            <p class="menu-title">帮助与支持</p>
+            <ul class="menu-items">
+              <li><a href="#">帮助中心</a></li>
+              <li><a href="#">联系客服</a></li>
+              <li><a href="#">文档资源</a></li>
+            </ul>
+          </div>
+          <p class="icp-info">闽ICP备18027236号</p>
+          <p class="rights">
+            &copy; 2020 豹发力体育 版权所有
+          </p>
+          <div class="scrollToTop">
+            <a href="#home"><i class="fas fa-chevron-up"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <script src="./anime-master/lib/anime.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
