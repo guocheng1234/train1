@@ -155,7 +155,7 @@ class App extends React.Component {
                 </Content>
                 <Footer>
                     <div className="text-center">
-                        版权所有 &copy; liuwencan
+                        版权所有 &copy; 蔡国城
             </div>
                 </Footer>
             </div>
